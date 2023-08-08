@@ -1,0 +1,22 @@
+
+.home {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100vh - 104px);
+  overflow: hidden;
+
+  & > div {
+    display: flex;
+  }
+
+  & > div:nth-child(2) {
+    flex: 1;
+    overflow: hidden auto;
+
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
